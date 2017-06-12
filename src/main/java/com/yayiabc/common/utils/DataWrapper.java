@@ -15,6 +15,8 @@ public class DataWrapper<T>  {
     private int currentPage;
     private int totalNumber;
     private int totalPage;
+    private int num;
+    private String msg;
 
     public DataWrapper() {
         callStatus = CallStatusEnum.SUCCEED;
@@ -87,8 +89,26 @@ public class DataWrapper<T>  {
     public void setTotalPage(int totalPage) {
         this.totalPage = totalPage;
     }
+    
+    
 
-    public void setPage(Page page, int totalNumber){
+    public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+	public void setPage(Page page, int totalNumber){
         this.totalNumber = totalNumber;
         this.currentPage = page.getCurrentPage();
         this.numberPerPage = page.getNumberPerPage();
@@ -98,13 +118,14 @@ public class DataWrapper<T>  {
             this.totalPage = 1;
         }
     }
-    @Override
-    public String toString() {
-        return	"Code:" + this.callStatus + "\n" +
-                "Error Code:" + this.errorCode+ "\n" +
-                "Page :" + this.currentPage + "\n" +
-                "Total Page :" + this.totalPage + "\n" +
-                "Num per Page:" + this.numberPerPage + "\n" +
-                "Total Num:" + this.totalNumber + "\n" ;
-    }
+
+	@Override
+	public String toString() {
+		return "DataWrapper [callStatus=" + callStatus + ", errorCode="
+				+ errorCode + ", data=" + data + ", token=" + token
+				+ ", numberPerPage=" + numberPerPage + ", currentPage="
+				+ currentPage + ", totalNumber=" + totalNumber + ", totalPage="
+				+ totalPage + ", num=" + num + ", msg=" + msg + "]";
+	}
+   
 }

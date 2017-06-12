@@ -13,6 +13,7 @@ public interface ItemApi {
 	 * @apiParam {String} secondClassify 商品二级分类
 	 * @apiParam {String} thirdClassify 商品三级分类
 	 * @apiParam {Integer} isQbBuy  是否支持乾币抵扣
+	 * @apiParam 
 	 * 
 	 * 
 	 * 
