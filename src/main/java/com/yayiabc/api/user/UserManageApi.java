@@ -17,7 +17,7 @@ public interface UserManageApi {
      * callStatus:"SUCCEED",
      * errorCode:"No_Error",
      * data(List):{
-     *     id:1,
+     *     userId:e58acb73-e33c-4798-ad14-5a827714c4a1,
      *     username:18712345678,
      *     password:"d1b2cc725d846f0460ff290c60925070",
      *     roleid:1,

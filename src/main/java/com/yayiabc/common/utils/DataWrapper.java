@@ -4,12 +4,6 @@ import com.yayiabc.common.enums.CallStatusEnum;
 import com.yayiabc.common.enums.ErrorCodeEnum;
 
 
-
-
-
-
-
-
 public class DataWrapper<T>  {
     private CallStatusEnum callStatus;
     private ErrorCodeEnum errorCode;
@@ -104,7 +98,6 @@ public class DataWrapper<T>  {
             this.totalPage = 1;
         }
     }
-
     @Override
     public String toString() {
         return	"Code:" + this.callStatus + "\n" +

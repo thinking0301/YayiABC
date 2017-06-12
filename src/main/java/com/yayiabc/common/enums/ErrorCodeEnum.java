@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by TIANCHENGYUAN103 on 2015-12-04.
  */
-public enum ErrorCodeEnum implements Serializable {
+public enum ErrorCodeEnum {
 
     No_Error("No ERROE!", 0),
     Error("Unknown error!", 1),
