@@ -5,6 +5,11 @@ import com.yayiabc.common.enums.ErrorCodeEnum;
 
 
 
+
+
+
+
+
 public class DataWrapper<T>  {
     private CallStatusEnum callStatus;
     private ErrorCodeEnum errorCode;

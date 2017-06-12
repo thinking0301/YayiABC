@@ -9,12 +9,12 @@ import java.util.Date;
  */
 public class TimeUtil {
     public static String changeDateToString(Date date){
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
         String timeString = sdf.format(date);
         return timeString;
     }
     public static Date changeStringToDate(String time) throws ParseException {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
         return sdf.parse(time);
     }
     public static Long timeBetween(Date oldDate, Date nowDate){
