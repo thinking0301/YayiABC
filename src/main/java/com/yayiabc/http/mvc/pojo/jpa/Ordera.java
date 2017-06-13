@@ -10,8 +10,6 @@ import java.util.List;
 public class Ordera extends BasePojo {
 	private String orderId;
 
-	private User user;
-
 	private Integer actualPay;
 
 	private Integer payType;
@@ -44,20 +42,23 @@ public class Ordera extends BasePojo {
 
 	private Integer giveQb;
 
+	private String refundInfo;
+
 	private List<OrderItem> orderitemList;
 
 	private List<Comment> commentList;
 
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
 
 	public List<OrderItem> getOrderitemList() {
 		return orderitemList;
+	}
+
+	public String getRefundInfo() {
+		return refundInfo;
+	}
+
+	public void setRefundInfo(String refundInfo) {
+		this.refundInfo = refundInfo;
 	}
 
 	public void setOrderitemList(List<OrderItem> orderitemList) {
@@ -218,10 +219,11 @@ public class Ordera extends BasePojo {
 			String buyerMessage, String buyerNick, Integer buyerRate,
 			Integer state, String shippingName, String shippingCode,
 			String invoiceHand, Integer isRegister, Integer giveQb,
-			List<OrderItem> orderitemList, List<Comment> commentList) {
+			String refundInfo, List<OrderItem> orderitemList,
+			List<Comment> commentList) {
 		super();
 		this.orderId = orderId;
-		this.user = user;
+
 		this.actualPay = actualPay;
 		this.payType = payType;
 		this.postFee = postFee;
@@ -238,13 +240,14 @@ public class Ordera extends BasePojo {
 		this.invoiceHand = invoiceHand;
 		this.isRegister = isRegister;
 		this.giveQb = giveQb;
+		this.refundInfo = refundInfo;
 		this.orderitemList = orderitemList;
 		this.commentList = commentList;
 	}
 
 	@Override
 	public String toString() {
-		return "Ordera [orderId=" + orderId + ", user=" + user + ", actualPay="
+		return "Ordera [orderId=" + orderId + ", actualPay="
 				+ actualPay + ", payType=" + payType + ", postFee=" + postFee
 				+ ", paymentTime=" + paymentTime + ", consignTime="
 				+ consignTime + ", endTime=" + endTime + ", closeTime="
@@ -253,8 +256,8 @@ public class Ordera extends BasePojo {
 				+ ", shippingName=" + shippingName + ", shippingCode="
 				+ shippingCode + ", invoiceHand=" + invoiceHand
 				+ ", isRegister=" + isRegister + ", giveQb=" + giveQb
-				+ ", orderitemList=" + orderitemList + ", commentList="
-				+ commentList + "]";
+				+ ", refundInfo=" + refundInfo + ", orderitemList="
+				+ orderitemList + ", commentList=" + commentList + "]";
 	}
 
 }

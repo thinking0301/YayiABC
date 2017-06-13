@@ -52,6 +52,8 @@ public class User extends BasePojo {
 
 	private List<Comment> commentList;
 
+	private List<ItemStar> itemstarList;
+
 	public String getUserId() {
 		return userId;
 	}
@@ -62,6 +64,14 @@ public class User extends BasePojo {
 
 	public String getReflect() {
 		return reflect;
+	}
+
+	public List<ItemStar> getItemstarList() {
+		return itemstarList;
+	}
+
+	public void setItemstarList(List<ItemStar> itemstarList) {
+		this.itemstarList = itemstarList;
 	}
 
 	public void setReflect(String reflect) {
@@ -229,7 +239,8 @@ public class User extends BasePojo {
 			Date birthday, String qq, String address, Integer money,
 			Integer isBind, Integer bindUserNum, User bindUser, String reflect,
 			Certification certification, List<Receiver> receiverList,
-			List<Ordera> orderaList, Cart cart, List<Comment> commentList) {
+			List<Ordera> orderaList, Cart cart, List<Comment> commentList,
+			List<ItemStar> itemstarList) {
 		super();
 		this.userId = userId;
 		this.phone = phone;
@@ -252,6 +263,7 @@ public class User extends BasePojo {
 		this.orderaList = orderaList;
 		this.cart = cart;
 		this.commentList = commentList;
+		this.itemstarList = itemstarList;
 	}
 
 	@Override
@@ -265,7 +277,8 @@ public class User extends BasePojo {
 				+ bindUser + ", reflect=" + reflect + ", certification="
 				+ certification + ", receiverList=" + receiverList
 				+ ", orderaList=" + orderaList + ", cart=" + cart
-				+ ", commentList=" + commentList + "]";
+				+ ", commentList=" + commentList + ", itemstarList="
+				+ itemstarList + "]";
 	}
 
 }

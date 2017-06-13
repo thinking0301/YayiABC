@@ -1,7 +1,5 @@
 package com.yayiabc.http.mvc.pojo.jpa;
 
-import java.util.Date;
-
 /**
  * 
  * @author xiaojiang 销售员收入表

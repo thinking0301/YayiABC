@@ -6,7 +6,7 @@ public interface UserLogApi {
     /**
      * @api {post} http://localhost:8080/yayiabc/api/user/register 用户注册
      * @apiName register
-     * @apiGroup user
+     * @apiGroup userLog
      * @apiVersion 0.1.0
      * @apiDescription 注册
      *
@@ -48,7 +48,7 @@ public interface UserLogApi {
     /**
      * @api {post} http://localhost:8080/yayiabc/api/user/getVerifyCode 获取验证码
      * @apiName getVerifyCode
-     * @apiGroup user
+     * @apiGroup userLog
      * @apiVersion 0.1.0
      * @apiDescription 获取验证码
      *
@@ -90,7 +90,7 @@ public interface UserLogApi {
     /**
      * @api {post} http://localhost:8080/yayiabc/api/user/noteLogin 短信登录
      * @apiName noteLogin
-     * @apiGroup user
+     * @apiGroup userLog
      * @apiVersion 0.1.0
      * @apiDescription 短信登录
      *
@@ -157,7 +157,7 @@ public interface UserLogApi {
     /**
      * @api {post} http://localhost:8080/yayiabc/api/user/pwdLogin 密码登录
      * @apiName pwdLogin
-     * @apiGroup user
+     * @apiGroup userLog
      * @apiVersion 0.1.0
      * @apiDescription 密码登录
      *
@@ -230,7 +230,7 @@ public interface UserLogApi {
      *
      * @api {post} http://localhost:8080/yayiabc/api/user/reLogin 退出登录
      * @apiName reLogin
-     * @apiGroup user
+     * @apiGroup userLog
      * @apiVersion 0.1.0
      * @apiDescription 退出登录
      *
@@ -272,7 +272,7 @@ public interface UserLogApi {
 	 /**
      * @api {post} http://localhost:8080/yayiabc/api/user/forgetPwd 忘记密码
      * @apiName forgetPwd
-     * @apiGroup user
+     * @apiGroup userLog
      * @apiVersion 0.1.0
      * @apiDescription 忘记密码
      *

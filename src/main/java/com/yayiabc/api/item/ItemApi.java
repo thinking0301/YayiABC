@@ -27,9 +27,6 @@ public interface ItemApi {
 	 *             itemId :         "201706050001"  (商品编号),
 	*              itemName         "牙具座"          (商品名称)        ,
 	*              itemBrand:{
-	*              
-	*   
-	*   
 	*   			}        
 	*   item_stock_id        varchar(20),
 	*   refund_id            varchar(20),

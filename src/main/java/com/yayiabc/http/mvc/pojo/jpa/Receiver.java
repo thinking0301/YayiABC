@@ -1,12 +1,11 @@
 package com.yayiabc.http.mvc.pojo.jpa;
+
 /**
  * 
  * @author xiaojiang 收货地址表
  */
-public class Receiver extends BasePojo{
+public class Receiver extends BasePojo {
 	private Integer receiverId;
-
-	private User user;
 
 	private String receiverName;
 
@@ -28,14 +27,6 @@ public class Receiver extends BasePojo{
 
 	public void setReceiverId(Integer receiverId) {
 		this.receiverId = receiverId;
-	}
-
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
 	}
 
 	public String getReceiverName() {
@@ -95,17 +86,15 @@ public class Receiver extends BasePojo{
 		this.isDefault = isDefault;
 	}
 
-
 	public Receiver() {
 		super();
 	}
 
-	public Receiver(Integer receiverId, User user, String receiverName,
-			String province, String city, String area, String receiverDetail,
-			String phone, Integer isDefault) {
+	public Receiver(Integer receiverId, String receiverName, String province,
+			String city, String area, String receiverDetail, String phone,
+			Integer isDefault) {
 		super();
 		this.receiverId = receiverId;
-		this.user = user;
 		this.receiverName = receiverName;
 		this.province = province;
 		this.city = city;
@@ -117,13 +106,10 @@ public class Receiver extends BasePojo{
 
 	@Override
 	public String toString() {
-		return "Receiver [receiverId=" + receiverId + ", user=" + user
-				+ ", receiverName=" + receiverName + ", province=" + province
-				+ ", city=" + city + ", area=" + area + ", receiverDetail="
-				+ receiverDetail + ", phone=" + phone + ", isDefault="
-				+ isDefault + "]";
+		return "Receiver [receiverId=" + receiverId + ", receiverName="
+				+ receiverName + ", province=" + province + ", city=" + city
+				+ ", area=" + area + ", receiverDetail=" + receiverDetail
+				+ ", phone=" + phone + ", isDefault=" + isDefault + "]";
 	}
-
-
 
 }
